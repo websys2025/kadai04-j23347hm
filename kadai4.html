@@ -36,7 +36,7 @@
                     console.log("商品は以下の" + Item.number + "種類です。");
 
                     // 配列の内容を項目毎に出力
-                    for(let i = 0; i < item.length; i++){
+                    for(let i = 0; i < items.length; i++){
                         var item = item[i]
                         console.log("商品番号：" + item.id + "," + "商品名：" + item.name + "," + "金額：" + item.price + "在庫数：" + item.stock)
                 
@@ -67,7 +67,7 @@
             const item_list = new Array(items.length);
             const btn = new Array(items.length);
 
-             for(let i = 0; i < item.length; i++){
+             for(let i = 0; i < items.length; i++){
                 item_list[i] = new Item(items[i].name, items[i].price, items[i].stock);
             }
 
