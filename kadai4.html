@@ -74,6 +74,11 @@
             // 課題4-1. ここにコード書く
             // 商品オブジェクトの生成
 
+            for(let i = 0; i < item.length; i++){
+                const itemArea = document.getElementById("item_area");
+                itemArea.innerHTML += "<tr><td>" +items[i].name + "</td><td>" + items[i].price + "</td><td>" + "<tdid='" + item_list[i].id +"'>" + items[i].stock + "<td><button type='button' id = 'button"+ item_list[i].id +"'>購入</button>" + "</td></tr>";
+                }
+
             // 課題4-2. ここにコードを書く
             // 商品表の作成
 
