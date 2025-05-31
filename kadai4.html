@@ -80,7 +80,13 @@
 
             for(let i = 0; i < items.length; i++){
                 const itemArea = document.getElementById("item_area");
-                itemArea.innerHTML += "<tr><td>" +items[i].name + "</td><td>" + items[i].price + "</td><td>" + "<tdid='" + item_list[i].id +"'>" + items[i].stock + "<td><button type='button' id = 'button"+ item_list[i].id +"'>購入</button>" + "</td></tr>";
+                itemArea.innerHTML += 
+                "<tr>" +
+                "<td>" +items[i].name + "</td>" +
+                "<td>" + items[i].price + "</td>" +
+                "<td id='" + item_list[i].id +"'>" + items[i].stock + "</td>" +
+                "<td><button type='button' id = 'button"+ item_list[i].id +"'>購入</button></td>"
+                "</tr>";
                 }
 
             // 課題4-2. ここにコードを書く
